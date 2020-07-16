@@ -11,7 +11,13 @@ These note are from the live workshop of this course. This course will walk you 
 This is a public resource so you can add and update or futher clarify
 
 
-## Feel free to submit a PR!
+## Notes - Table of Contents 📜
+
+- [01-Set up Vue-Router and add the Root Application Route](notes/01-vue-js-set-up-vue-router-and-add-the-root-application-route.md)
+- [02-Create Routes in Vue and Understand the Path Hierarchy](notes/02-vue-js-create-routes-in-vue-and-understand-the-path-hierarchy.md)
+- [03-Access Route Parameters in a Vue Component](notes/03-vue-js-access-route-parameters-in-a-vue-component.md)
+- [04-Create Subroutes Displaying One or More Vue Components with the children Key](notes/04-vue-js-create-subroutes-displaying-one-or-more-vue-components-with-the-children-key.md)
+- [A Journey with Vue Router Live Workshop Notes](notes/a-jounrney-with-vue-router-live-workshop-notes.md)
 
 ## Contributors
 
