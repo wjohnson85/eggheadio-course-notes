@@ -30,4 +30,4 @@ Once you've deployed, you'll be able to see the log. Click on **Test** in the `a
 
 ![Environment variable Images](https://res.cloudinary.com/dg3gyk0gu/image/upload/v1591637696/transcript-images/09-pass-environment-variables-to-a-lambda-function-deployed-with-aws-cdk-env-image.png)
 
-    </TimeStamp>
+  </TimeStamp>
