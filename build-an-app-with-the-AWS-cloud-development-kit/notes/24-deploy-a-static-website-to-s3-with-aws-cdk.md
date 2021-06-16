@@ -4,6 +4,9 @@
 
 Let's deploy our frontend app (that currently lives on `localhost`) to the Internet.
 
+ <TimeStamp start="0:14" end="1:04">
+
+
 First, let's `build` the app! Go to `frontend` directory and run:
 
 * `yarn run build`
@@ -18,6 +21,10 @@ const websiteBucket = new s3.Bucket(this, "WebsiteBucket", {
     websiteIndexDocument: "index.html"
 });
 ```
+ </TimeStamp>   
+ 
+  <TimeStamp start="1:04" end="1:24">
+
 Instead of copying the contents of the `build` folder manually, let's deploy it automatically by adding this:
 
 ```ts
@@ -27,6 +34,10 @@ new s3Deployment.BucketDeployment(this, "DeployWebsite", {
     sources: [s3Deployment.Source.asset("../frontend/build")]
 });
 ```
+ </TimeStamp>   
+
+  <TimeStamp start="1:41" end="1:55">
+
 
 Lastly, just like with the logo url, let's output the website url.
 
@@ -35,3 +46,5 @@ new cdk.CfnOutput(this, "WebsiteUrl", {
     value: websiteBucket.bucketWebsiteUrl
 });
 ```
+    
+ </TimeStamp>

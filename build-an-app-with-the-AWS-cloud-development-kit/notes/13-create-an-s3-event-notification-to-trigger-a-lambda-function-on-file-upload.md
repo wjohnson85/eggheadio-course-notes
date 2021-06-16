@@ -2,6 +2,9 @@
 
 **[📹 Video](https://egghead.io/lessons/aws-create-an-s3-event-notification-to-trigger-a-lambda-function-on-file-upload)**
 
+<TimeStamp start="0:20" end="1:28">
+
+
 Let's trigger our `lambda` function every time we upload a file to our `s3` bucket.
 
 We'll need to install `s3 notifications`.
@@ -24,8 +27,12 @@ logoBucket.addEventNotification(
     new s3Notifications.LambdaDestination(helloLambda)
 );
 ```
+</TimeStamp>    
 
 👍 Tip: Make sure you have `npm run watch` running in another terminal tab - this will let you know if there are any `typescript` errors.
+
+<TimeStamp start="1:55" end="2:39">
+
 
 In the `aws` console, go to **Services** and search for `s3`. Upload a file to the bucket then check if the `lambda` function was triggered by going back to **Services** and looking for `lambda`.
 
@@ -46,3 +53,5 @@ Mine looked like this:
             "sequencer": "005EBCD5882BF314F4"
         }
 ```
+    
+</TimeStamp>

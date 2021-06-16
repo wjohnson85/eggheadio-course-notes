@@ -2,7 +2,12 @@
 
 **[📹 Video](https://egghead.io/lessons/aws-add-a-custom-cloudformation-stack-output-with-cdk)**
 
+
+
 Let's fix the missing logo at the bottom of our todo application. We need to tell our frontend application to source it from our `s3` `logoBucket`.
+
+ <TimeStamp start="1:00" end="1:33">
+
 
 Instead of manually searching for the logo url in our `aws` console (not a true hacker move!), we can output the url in our terminal with each deployment.
 
@@ -13,6 +18,7 @@ new cdk.CfnOutput(this, "LogoPath", {
     value: `https://${logoBucket.bucketDomainName}/testFile.png`
 });
 ```
+ </TimeStamp>
 
 👍 Once you deploy, you should see the logo path in the output section.
 

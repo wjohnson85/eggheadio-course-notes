@@ -2,9 +2,14 @@
 
 **[📹 Video](https://egghead.io/lessons/aws-use-a-bucket-deployment-to-upload-a-file-to-s3-when-deploying-a-cdk-stack)**
 
+ <TimeStamp start="0:02" end="1:13">
+
+
 Instead of manually uploading our assets, let's create an `assets` folder in our todo application and upload those assets automatically.
+    
 
 👍 We'll be using the `aws-s3-deployment` deployment construct to do that.
+   
 
 Create an `assets` directory in the root of the project and add a test file to it.
 
@@ -25,4 +30,7 @@ new s3Deployment.BucketDeployment(this, "DeployLogo", {
 });
 ```
 
+
 Once we run `cdk deploy` our test file should be safe and sound in our todo `s3` bucket.
+</TimeStamp>
+

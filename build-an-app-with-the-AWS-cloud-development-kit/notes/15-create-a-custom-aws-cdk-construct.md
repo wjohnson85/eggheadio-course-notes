@@ -4,6 +4,9 @@
 
 Let's start creating a serverless backend for our todo application.
 
+<TimeStamp start="0:40" end="1:02">
+
+
 We're going to create a custom construct, where we are going to put our database and a `lambda` function.
 
 ![Custom Construct Illustration](https://res.cloudinary.com/dg3gyk0gu/image/upload/v1592247659/transcript-images/15-create-a-custom-aws-cdk-construct-custom-construct-images.png)
@@ -22,6 +25,10 @@ export class TodoBackend extends cdk.Construct {
     }
 }
 ```
+</TimeStamp>
+
+<TimeStamp start="1:21" end="1:35">
+
 
 Then import the construct into our main stack app and create an instance of it:
 
@@ -30,5 +37,7 @@ import { TodoBackend } from "./todo-backend";
 
 const todoBackend = new TodoBackend(this, "TodoBackend");
 ```
+</TimeStamp>
 
+  
 Let's cleanup the file a bit: delete `logoBucket`, the `s3Notifications` import, lastly, swap `helloLambda` for `todoBackend.handler`.

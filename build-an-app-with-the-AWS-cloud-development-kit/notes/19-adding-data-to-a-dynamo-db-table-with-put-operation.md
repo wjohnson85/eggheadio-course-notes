@@ -4,6 +4,8 @@
 
 Let's implement the ability to add todos!
 
+ <TimeStamp start="0:07" end="0:27">
+
 Start by updating the handler in our lambda, by adding:
 
 ```ts
@@ -49,6 +51,9 @@ try {
 ```
 
 🤔 The source code is available [here](https://github.com/tlakomy/egghead-aws-cdk-workshop/blob/master/todo-app/lesson_08/lambda/todoHandler.ts).
+ </TimeStamp>
+
+ <TimeStamp start="0:30" end="0:48">
 
 Now let's write the function for adding the todos (head here for the [dynamoDB cheatsheet](https://github.com/dabit3/dynamodb-documentclient-cheat-sheet)).
 
@@ -72,9 +77,15 @@ const addTodoItem = async (data: { todo: string; id: string }) => {
     return todo;
 };
 ```
+ </TimeStamp>
+
+ <TimeStamp start="1:47" end="2:40">
 
 👍 Let's deploy and test!
 
 You'll need a REST client (like [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/product/api-client/)) to test the `POST` request and of course, your app's endpoint.
 
 For a `POST` request set the `body` to `JSON` (in Postman that means setting `Content-Type:application/json` in `Headers`).
+    
+  </TimeStamp>
+   
